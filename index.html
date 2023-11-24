@@ -1,0 +1,374 @@
+<html>
+<head>
+<title>The Portfolio</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+    body
+    {
+        background-color: black;
+        color: #ffffff;
+    }
+.bgimage
+{
+height:100vh;
+background: url('pixe.jpg');
+background-size:cover;
+position:relative;
+}
+.sub-side
+{
+    padding-right: 20px;
+}
+.hero_title 
+{
+    font-size: 4.5rem;
+}
+.hero_desc 
+{
+    font-size: 2rem;
+}
+.hero-text 
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.imageAboutPage 
+{
+    width: 100%;
+}
+.servicesText.card 
+{
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon 
+{
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title 
+{
+    text-align: center;
+}
+.card:hover .servicesIcon
+{
+    color: #008000;
+}
+.servicesText:hover 
+{
+    border: 1px solid #008000;
+}
+.social-icons 
+{
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover 
+{
+    color: #008000;
+}
+.fab 
+{
+    color: #ffffff;
+}
+
+#footer 
+{
+    background-color: #ffffff;
+    text-align: center;
+}
+#about, #services, #portfolio, #contact 
+{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact 
+{
+    padding-bottom: 4rem;
+}
+.side
+{
+    padding-top: 15px;
+    font-size: 18px;
+    padding-left: 20%;
+}
+.text-align
+{
+    margin-left: 20%;
+}
+.text-align1
+{
+    margin-left: 45%;
+}
+.size1
+{
+    height: 332px;
+}
+.size
+{
+    height: 275px;
+}
+.card-body
+{
+    text-align: center;
+}
+</style>
+<script>
+const header = document.querySelector('.navbar');
+window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+</script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <div class="container">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Deepak Kumar</a>
+              </div>
+              <ul class="side nav navbar-nav">
+                <a class="sub-side nav-link" href="#home">Home</a>
+                <a class="sub-side nav-link" href="#about">About</a>
+                <a class="sub-side nav-link" href="#services">Services</a>
+                <a class="sub-side nav-link" href="#portfolio">Portfolio</a>
+                <a class="sub-side nav-link" href="#contact">Contact</a>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+
+    </div>
+</nav>
+<section class="bgimage" id="home">
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title">Hi, it's me Deepak</h2>
+            <p class="hero_desc">I am a Student, Pursuing B.C.A</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="main.jpg" class= "imageAboutPage" alt="">
+            </div>
+
+            <div class="col-lg-8">
+                <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                    
+                </p>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Name: Deepak Kumar</li>
+                            <li>Age: 19</li>
+                            <li>Occupation: Web Developer</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="services">
+    <div class="container">
+        <h1 class="text-center">Services</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">SEO</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">DevOps</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">QA</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio">
+    <div class="container mt-3">
+        <h1 class="text-center">Portfolio</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card">
+                    <img class="card-img-top" src="Landing.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Landing Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://000deepakkumar.github.io/Landing_Page/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="calculator.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Calculator</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://000deepakkumar.github.io/Calculator/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="size1 card-img-top" src="solar.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Solar System</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://000deepakkumar.github.io/Origin.github.io/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="card-img-top" src="tribute.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Tribute Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://000deepakkumar.github.io/Tribute/" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                    <img class="size card-img-top" src="front.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Frontend Mentor Page</h4>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="text-center">
+                            <a href="https://000deepakkumar.github.io/#" class="btn btn-success">Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<section id="contact">
+    <div class="container mt-3 contactContent">
+        <h1 class="text-align">Contact Me</h1>
+
+            <div class="col-lg-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    <input type="email" class="form-control mt-3" placeholder="Email">
+                    <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <div class="mb-3 mt-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                    </div>
+                </form>
+                <button type="button" class="text-align1 btn-success mt-3">Enter</button>
+                
+            </div>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
